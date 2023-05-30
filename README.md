@@ -1,2 +1,8 @@
 # to-do-list-app
- To-do list with jQuery
+ Simple to-do list with jQuery
+ 
+## Functions
+- Add items
+- Delete items
+- Strike-through
+- Organize list by dragging & dropping items
