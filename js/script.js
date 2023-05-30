@@ -2,6 +2,7 @@ function newItem() {
   //javascript
   //1. Adding a new item to the list of items:
   let li = $('<li></li>');
+  let list = $('#list');
   let inputValue = $('input').val();
   let text = document.createTextNode(inputValue);
   li.append(text);
@@ -9,7 +10,6 @@ function newItem() {
   if (inputValue === '') {
     alert('You must write something!');
   } else {
-    let list = $('#list');
     list.append(li);
   }
 
@@ -30,5 +30,5 @@ function newItem() {
     li.addClass('delete');
   }
   // 4. Reordering the items:
-  $("#list").sortable();
+  list.sortable();
 }
